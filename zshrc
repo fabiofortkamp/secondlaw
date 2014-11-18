@@ -80,4 +80,4 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X1
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # with history substitutions, print the line that will be executed first
-HIST_VERIFY="true"
+setopt HIST_VERIFY
