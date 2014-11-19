@@ -31,3 +31,9 @@ source $ZSH/oh-my-zsh.sh
 
 # with history substitutions, print the line that will be executed first
 setopt HIST_VERIFY
+
+# force Emacs behaviour in zle
+bindkey -e
+
+# use Ctrl-w to kill region
+bindkey "^w" kill-region
