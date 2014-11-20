@@ -32,6 +32,9 @@ source $ZSH/oh-my-zsh.sh
 # with history substitutions, print the line that will be executed first
 setopt HIST_VERIFY
 
+# enable more file globbing patterns (like `^p1` for negating `p1`)
+setopt EXTENDED_GLOB
+
 # force Emacs behaviour in zle
 bindkey -e
 
