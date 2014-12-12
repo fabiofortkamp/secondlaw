@@ -13,7 +13,7 @@ This is a personal project where I try to organize my terminal configurations. T
 4. Create a symbolic link for `zshenv` to `~/.zshenv` (this contains the environment variables)
 4. Create a symbolic link for the `oh-my-zsh-custom` directory to `~/.oh-my-zsh-custom`
 
-This assume you installed `oh-my-zsh` to the default directory. If you modified the installation, modify the `ZSH` environment variable inside `zshrc` accordingly.
+This assume you installed `oh-my-zsh` to the default directory. If you modified the installation, modify the `ZSH` environment variable inside `zshenv` accordingly.
 
 The `oh-my-zsh-custom` directory is where you place customizations for the `oh-my-zsh` framework. Refer to their page for instructions.
 
