@@ -12,6 +12,7 @@ This is a personal project where I try to organize my terminal configurations. T
 3. Create a symbolic link for the `zshrc` file to `~/.zshrc` (creating a backup and deleting the old version if there exists one)
 4. Create a symbolic link for `zshenv` to `~/.zshenv` (this contains the environment variables)
 5. Create a symbolic link for the `oh-my-zsh-custom` directory to `~/.oh-my-zsh-custom`
+6. Create a symbolic link for `latexmkrc` to `~/.latexmkrc`
 
 This assumes you installed `oh-my-zsh` to the default directory. If you modified the installation, modify the `ZSH` environment variable inside `zshenv` accordingly.
 
@@ -31,3 +32,4 @@ We are just at the beginning.
 * Dedicated, separated folder to customize `oh-my-zsh`
 * A very nice prompt, completely stolen from [Dr. Bunsen](http://www.drbunsen.org/the-text-triumvirate/)
 * Solarized light profile for Mintty (for Windows/Cygwin), copied from [this repository](https://github.com/mavnn/mintty-colors-solarized)
+* PDF mode for latexmkrc
