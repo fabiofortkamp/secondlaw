@@ -41,3 +41,8 @@ bindkey -e
 
 # use Ctrl-w to kill region
 bindkey "^w" kill-region
+
+
+# Local Variables:
+# mode: sh
+# End:
