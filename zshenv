@@ -7,3 +7,7 @@ typeset -U path
 path=(/usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/local/bin /opt/X11/bin /usr/local/git/bin /usr/texbin $path)
 
 export PATH=$HOME/miniconda3/bin:$PATH
+
+export EDITOR=emacsclient
+
+export VISUAL=emacsclient
