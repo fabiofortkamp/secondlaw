@@ -29,6 +29,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gpall="git push -u origin --all"
+alias emacs="emacsclient -n"
 
 # with history substitutions, print the line that will be executed first
 setopt HIST_VERIFY
