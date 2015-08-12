@@ -11,3 +11,6 @@ export PATH=$HOME/miniconda3/bin:$PATH
 export EDITOR=emacsclient
 
 export VISUAL=emacsclient
+
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
