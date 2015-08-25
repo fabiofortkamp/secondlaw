@@ -31,10 +31,6 @@ source $ZSH/oh-my-zsh.sh
 alias gpall="git push -u origin --all"
 alias emacs="emacsclient -n"
 
-# for python, I use miniconda3, but then python and pip are symlinked to their python3 versions. Here we fix that, in case we want to use a plain version
-alias python="/usr/local/bin/python"
-alias pip="/usr/local/bin/pip"
-alias pip3=$HOME/miniconda3/bin/pip
 
 # with history substitutions, print the line that will be executed first
 setopt HIST_VERIFY
@@ -52,3 +48,5 @@ bindkey "^w" kill-region
 # Local Variables:
 # mode: sh
 # End:
+
+test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
