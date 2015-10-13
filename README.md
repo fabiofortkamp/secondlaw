@@ -15,6 +15,7 @@ For Windows/Cygwin (besides all of those steps above):
 
 1. Create a [Windows link](http://www.howtogeek.com/howto/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/) for `minttyrc` in your Home directory directory
 2. Install the [Input Mono font](http://input.fontbureau.com/)
+3. Create a shortcut to `QuakeTerminal.ahk` and to the Console executable in the Startup folder
 
 ## Current features
 
@@ -23,3 +24,5 @@ We are just at the beginning.
 * Some git aliases 
 * Solarized light profile for Mintty (for Windows/Cygwin), copied from [this repository](https://github.com/mavnn/mintty-colors-solarized)
 * PDF mode for latexmkrc
+* For Windows: ``Ctrl-` `` will activate the [Console "visor"](http://tech.xster.net/tips/quake-style-drop-down-terminal-for-windows/ ). `Escape` deactivates it
+ 
