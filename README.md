@@ -8,7 +8,7 @@ This is a personal project where I try to organize my terminal configurations. T
 ## Installation
 
 1. Clone this repository to a directory of your choice.
-2. Include this line inside your bash configuration file (e.g. `~/.bash_profile`): `source <secondlaw dir>/secondlaw.sh`
+2. Inside your bash configuration file (e.g. `~/.bash_profile`), define the `SECONDLAW` variable to your directory, and then include `source $SECONDLAW/secondlaw.sh`
 3. Create a symbolic link for `latexmkrc` to `~/.latexmkrc`
 
 For Windows/Cygwin (besides all of those steps above):
@@ -25,4 +25,5 @@ We are just at the beginning.
 * Solarized light profile for Mintty (for Windows/Cygwin), copied from [this repository](https://github.com/mavnn/mintty-colors-solarized)
 * PDF mode for latexmkrc
 * For Windows: ``Ctrl-` `` will activate the [Console "visor"](http://tech.xster.net/tips/quake-style-drop-down-terminal-for-windows/ ). `Escape` deactivates it
+* A nice prompt, based on [my fork of `git-prompt-bash`](https://github.com/fabiofortkamp/bash-git-prompt). Basically, the prompt looks like this: `<user> in <dir> <git-info>`. This repo is included as a submodule
  
