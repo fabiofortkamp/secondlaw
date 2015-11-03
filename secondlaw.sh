@@ -17,8 +17,8 @@ source $GIT_PROMPT/prompt-colors.sh
 
 #GIT_PROMPT_ONLY_IN_REPO=1
 
-GIT_PROMPT_START="\n${Red}\u ${ResetColor}in ${Blue}`pwd`${ResetColor}"
-GIT_PROMPT_END="\n\$ "
+GIT_PROMPT_START="\n${Red}\u ${ResetColor}in ${Blue}\w ${ResetColor}:"
+GIT_PROMPT_END='\n\$ '
 
 source $GIT_PROMPT/gitprompt.sh
 GIT_PROMPT_THEME=Solarized
