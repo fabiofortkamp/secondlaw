@@ -22,3 +22,9 @@ GIT_PROMPT_END='\n\$ '
 
 source $GIT_PROMPT/gitprompt.sh
 GIT_PROMPT_THEME=Solarized
+
+# PRM
+PRM_INSTALLATION_DIR=$SECONDLAW/prm
+PRM_DIR="$SECONDLAW/prm-data"
+
+alias prm=". $PRM_INSTALLATION_DIR/prm.sh"
