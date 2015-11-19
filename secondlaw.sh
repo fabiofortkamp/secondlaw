@@ -25,6 +25,13 @@ GIT_PROMPT_THEME=Solarized
 
 # PRM
 PRM_INSTALLATION_DIR=$SECONDLAW/prm
-PRM_DIR="$SECONDLAW/prm-data"
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+        # Mac OSX
+    PRM_DIR="$SECONDLAW/prm-data-osx"
+elif [[ "$OSTYPE" == "msys" ]]; then
+        # Lightweight shell and GNU utilities compiled for Windows (part of MinGW)
+    PRM_DIR="$SECONDLAW/prm-data-win"
+fi
 
 alias prm=". $PRM_INSTALLATION_DIR/prm.sh"
