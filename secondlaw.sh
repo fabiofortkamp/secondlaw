@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-
-
 #Aliases
 alias gst='git status'
 alias ga='git add'
@@ -10,7 +8,6 @@ alias gcmsg='git commit -m'
 
 alias emacs='emacsclient -n'
 
-
 EDITOR='emacsclient -n'
 ALTERNATE_EDITOR='atom'
 
@@ -18,7 +15,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
         # Mac OSX
     PRM_DIR="$SECONDLAW/prm-data-osx"
 elif [[ "$OSTYPE" == "msys" ]]; then
-        # Lightweight shell and GNU utilities compiled for Windows (part of MinGW)
+        # Lightweight shell and GNU utilities compiled for Windows (part of MinGW and Git for Windows Bash)
     PRM_DIR="$SECONDLAW/prm-data-win"
 fi
 
