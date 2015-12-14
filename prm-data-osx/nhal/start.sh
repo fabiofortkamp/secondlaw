@@ -6,6 +6,7 @@
 # The currently active project is available via $PRM_ACTIVE_PROJECT
 # Command line arguments can be used, $3 would be the first argument after your project name.
 
+ENVNAME='thermo'
 cd $HOME/code/nhalbach
 
-source activate thermo
+source activate $ENVNAME
