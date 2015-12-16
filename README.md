@@ -10,6 +10,7 @@ This is a personal project where I try to organize my terminal configurations. T
 1. Clone this repository to a directory of your choice, using the `--recursive` flag (since I include some submodules).
 2. Inside your bash configuration file (e.g. `~/.bash_profile`), define the `SECONDLAW` variable to point to the installation directory from the step above, and then include `source $SECONDLAW/secondlaw.sh` in the configuration file. Important! Don't forget to actually define this variable, since it is used thourghout this project.
 3. Create a symbolic link for `latexmkrc` to `~/.latexmkrc`
+4. Create a `prm-data-win` or `prm-data-osx` (depending on your system) inside this directory.
 
 For Windows/Cygwin (besides all of those steps above):
 
