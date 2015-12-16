@@ -11,12 +11,14 @@ This is a personal project where I try to organize my terminal configurations. T
 2. Inside your bash configuration file (e.g. `~/.bash_profile`), define the `SECONDLAW` variable to point to the installation directory from the step above, and then include `source $SECONDLAW/secondlaw.sh` in the configuration file. Important! Don't forget to actually define this variable, since it is used thourghout this project.
 3. Create a symbolic link for `latexmkrc` to `~/.latexmkrc`
 4. Create a `prm-data-win` or `prm-data-osx` (depending on your system) inside this directory.
+5. Install the [DejaVu fonts](http://dejavu-fonts.org/wiki/Main_Page)
 
 For Windows/Cygwin (besides all of those steps above):
 
-1. Install the [Input Mono font](http://input.fontbureau.com/)
-2. Create a shortcut to `QuakeTerminal.ahk` and to the [Console](http://sourceforge.net/projects/console/ ) 
- executable in the Startup folder.
+1. Install [Git for Windows](https://git-for-windows.github.io/), making sure to do a *complete installation* (install all utilies, add folders to PATH)
+2. Install [ConEmu](https://conemu.github.io/)
+3. Copy `ConEmu.xml` to `%APPDATA%` (unfortunately, it seems ConEmu cannot read symbolic links as settings file, so anytime the settings file it has to be exported to this repo to keep track of it; on the other hand, every time this repo is update you may have to copy this file again).
+4. Run ConEmu to make sure everything is working
 
 ## Current features
 
@@ -28,7 +30,7 @@ We are just at the beginning. First, the basics:
 
 ### Terminal in Windows
 
-For Windows: ``Ctrl-` `` will activate the [Console "visor"](http://tech.xster.net/tips/quake-style-drop-down-terminal-for-windows/ ). `Escape` deactivates it
+For Windows: ``Ctrl-` `` will activate/deactivate ConEmu in a Visor style (you may want to put a shortcur to ConEmu in your start folder to assure fast access to the terminal on Windows).
 
 ### Git prompt
 
