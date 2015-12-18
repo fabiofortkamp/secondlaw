@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+
 # ----------
 # Aliases
 alias gst='git status'
@@ -26,6 +27,11 @@ elif [[ "$OSTYPE" == "msys" ]]; then
     PRM_DIR="$SECONDLAW/prm-data-win"
     alias sde='source deactivate'
 fi
+
+# ----------
+# Environment
+
+export PATH="$SECONDLAW/bin:$PATH"
 
 # ----------
 # git prompt
@@ -55,3 +61,5 @@ alias pst='prm start'
 # helpful alias from http://matt.might.net/articles/console-hacks-exploiting-frequency/
 # print the most used commands, to encourage optimization of command line usage
 alias freq='cat ~/.bash_history | sort | uniq -c | sort -gr | head'
+
+alias ebp='e $HOME/.bash_profile'

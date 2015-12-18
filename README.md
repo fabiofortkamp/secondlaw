@@ -19,6 +19,7 @@ For Windows/Cygwin (besides all of those steps above):
 2. Install [ConEmu](https://conemu.github.io/)
 3. Copy `ConEmu.xml` to `%APPDATA%` (unfortunately, it seems ConEmu cannot read symbolic links as settings file, so anytime the settings file it has to be exported to this repo to keep track of it; on the other hand, every time this repo is update you may have to copy this file again).
 4. Run ConEmu to make sure everything is working
+5. Create shortcuts for the [AutoHotKey][ahk] scripts in the StartUp Folder `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
 
 ## Current features
 
@@ -26,7 +27,7 @@ We are just at the beginning. First, the basics:
 
 * Some git aliases (type `alias` to see what's defined)
 * PDF mode for latexmkrc (later I may develop on this)
-* The `EDITOR` variable points to Emacs.
+* The `EDITOR` variable points to Emacs (or Atom, if Emacs is not available). The `e` alias is set up to the available editor.
 
 ### Terminal in Windows
 
@@ -38,5 +39,10 @@ I tried to develop a nice and simple prompt, and the implementation is based on 
 
 ### Bash projects
 
-I use [my fork](https://github.com/fabiofortkamp/prm) of the [`prm` package](https://github.com/eivind88/prm). In `secondlaw.sh`, I defined two possible locations for the configuration files for this package, based on the operating system (the `prm-data-*` directories). Check the repo page for more details.
+I use [my fork](https://github.com/fabiofortkamp/prm) of the [`prm` package](https://github.com/eivind88/prm). In `secondlaw.sh`, I defined two possible locations for the configuration files for this package, based on the operating system (the `prm-data-*` directories). Check the repo page for more details. There are also some useful aliases.
  
+### Autohotkey
+
+I will collect some [AutoHotKey][ahk] scripts in the `bin` directory (together with some other bash scripts). Read the comments in them to see what they do.
+
+[ahk]: http://autohotkey.com
