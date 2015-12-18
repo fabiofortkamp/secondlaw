@@ -1,16 +1,23 @@
 #!/usr/bin/env bash
 
-#Aliases
+# ----------
+# Aliases
 alias gst='git status'
 alias ga='git add'
 alias gpall='git push -u origin --all'
 alias gcmsg='git commit -m'
+alias gpull='git pull origin master'
+alias gr='git rm'
 
-alias emacs='emacsclient -n'
+# ----------
+# Editor configuration
+export EDITOR='emacsclient -n'
+export ALTERNATE_EDITOR='atom'
 
-EDITOR='emacsclient -n'
-ALTERNATE_EDITOR='atom'
+alias e="$EDITOR"
 
+# ----------
+# OS-specific configurations
 if [[ "$OSTYPE" == "darwin"* ]]; then
         # Mac OSX
     PRM_DIR="$SECONDLAW/prm-data-osx"
@@ -20,6 +27,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then
     alias sde='source deactivate'
 fi
 
+# ----------
 # git prompt
 GIT_PROMPT=$SECONDLAW/bash-git-prompt
 
@@ -33,9 +41,10 @@ GIT_PROMPT_END='\n\$ '
 source $GIT_PROMPT/gitprompt.sh
 GIT_PROMPT_THEME=Solarized
 
-# PRM
+# ----------
+# PRM (project management)
 PRM_INSTALLATION_DIR=$SECONDLAW/prm
 
-
-
 alias prm=". $PRM_INSTALLATION_DIR/prm.sh"
+alias pt='prm stop'
+alias pst='prm start'
