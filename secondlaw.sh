@@ -48,3 +48,10 @@ PRM_INSTALLATION_DIR=$SECONDLAW/prm
 alias prm=". $PRM_INSTALLATION_DIR/prm.sh"
 alias pt='prm stop'
 alias pst='prm start'
+
+# ----------
+# Misc stuff
+
+# helpful alias from http://matt.might.net/articles/console-hacks-exploiting-frequency/
+# print the most used commands, to encourage optimization of command line usage
+alias freq='cat ~/.bash_history | sort | uniq -c | sort -gr | head'
