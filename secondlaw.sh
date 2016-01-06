@@ -63,3 +63,9 @@ alias pst='prm start'
 alias freq='cat ~/.bash_history | sort | uniq -c | sort -gr | head'
 
 alias ebp='e $HOME/.bash_profile'
+
+# stolen from https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/functions.zsh
+function take() {
+  mkdir -p $1
+  cd $1
+}
