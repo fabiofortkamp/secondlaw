@@ -20,7 +20,7 @@ alias gr='git rm'
 if [[ "$OSTYPE" == "darwin"* ]]; then
         # Mac OSX
     PRM_DIR="$SECONDLAW/prm-data-osx"
-    export EDITOR='emacsclient -s $HOME/.emacs.d/server/server -n'
+    export EDITOR="emacsclient -s $HOME/.emacs.d/server/server -n"
 elif [[ "$OSTYPE" == "msys" ]]; then
         # Lightweight shell and GNU utilities compiled for Windows (part of MinGW and Git for Windows Bash)
     PRM_DIR="$SECONDLAW/prm-data-win"
