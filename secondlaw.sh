@@ -21,6 +21,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
         # Mac OSX
     PRM_DIR="$SECONDLAW/prm-data-osx"
     export EDITOR="emacsclient -s $HOME/.emacs.d/server/server -n"
+    export LC_ALL=en_US.UTF-8
+    export LANG=en_US.UTF-8
 elif [[ "$OSTYPE" == "msys" ]]; then
         # Lightweight shell and GNU utilities compiled for Windows (part of MinGW and Git for Windows Bash)
     PRM_DIR="$SECONDLAW/prm-data-win"
