@@ -31,7 +31,11 @@ We are just at the beginning. First, the basics:
 
 ### Terminal in Windows
 
-For Windows: ``Ctrl-` `` will activate/deactivate ConEmu in a Visor style (you may want to put a shortcur to ConEmu in your start folder to assure fast access to the terminal on Windows).
+For Windows: ``Hyper-I `` will activate/deactivate ConEmu in a Visor style (you may want to put a shortcur to ConEmu in your start folder to assure fast access to the terminal on Windows).
+
+The `Hyper` key is "created" by `bin/hyper.ahk`, transforming the left `Ctrl` key into `Ctrl-Shift-Alt`. This key combination is very hard to type and hence will likely not be used by any major application; therefore, it is useful for defining global, system-wide shortcuts.
+
+For more explanations, including the source for this inspiration and how I configure keyboards, see [this post of mine](http://thermocode.net/blog/keyboard/).
 
 ### Git prompt
 
