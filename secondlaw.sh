@@ -28,6 +28,11 @@ elif [[ "$OSTYPE" == "msys" ]]; then
     PRM_DIR="$SECONDLAW/prm-data-win"
     export EDITOR='emacsclient -n'
     alias sde='source deactivate'
+
+    # some programs installed via conda get odd names or are not installed as .exe. These aliases attempt at fixing that
+    alias markdown="markdown_py"
+    alias pweave="python `which pweave-script.py`"
+    alias ptangle="python `which ptangle-script.py`"
 fi
 
 export ALTERNATE_EDITOR='atom'
