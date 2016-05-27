@@ -33,6 +33,9 @@ elif [[ "$OSTYPE" == "msys" ]]; then
     alias markdown="markdown_py"
     alias pweave="python `which pweave-script.py`"
     alias ptangle="python `which ptangle-script.py`"
+
+    # ghostscript suffes from the same problem
+    alias gs="gswin64"
 fi
 
 export ALTERNATE_EDITOR='atom'
