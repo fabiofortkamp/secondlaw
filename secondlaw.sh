@@ -6,7 +6,9 @@
 alias gst='git status'
 alias ga='git add'
 alias gpall='git push -u origin --all'
+alias gtags='git push -u origin --tags'
 alias gcmsg='git commit -m'
+alias gac='git commit -am'
 alias gpull='git pull origin master'
 alias gr='git rm'
 
