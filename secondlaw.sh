@@ -86,3 +86,9 @@ function take() {
   mkdir -p $1
   cd $1
 }
+
+# function to close the buffer corresponding to a given file in emacs
+# cf = close file
+function cf() {
+    e -e  "(if (get-buffer \"$1\") (kill-buffer \"$1\"))"
+    }
