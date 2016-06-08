@@ -92,3 +92,10 @@ function take() {
 function cf() {
     e -e  "(if (get-buffer \"$1\") (kill-buffer \"$1\"))"
     }
+
+# function to compile and run a Java file
+# javar my_program.java
+function javar() {
+    javac $1;
+    java $(basename $1 .java)
+    }
