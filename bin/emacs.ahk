@@ -15,6 +15,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; this script simply defines a hotkey to activate Emacs
 ^!+e::
 IfWinNotExist, emacs
-	Run emacs
+	Run runemacs
 WinActivate emacs
 Return
