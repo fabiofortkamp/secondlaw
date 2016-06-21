@@ -99,3 +99,10 @@ function javar() {
     javac $1;
     java $(basename $1 .java)
     }
+
+# More ConEmu settings
+
+# This configures shell integration for ConEmu (Windows only)
+if [[ "$OSTYPE" == "msys" ]]; then
+    PROMPT_COMMAND="$PROMPT_COMMAND;ConEmuC -StoreCWD"
+fi
