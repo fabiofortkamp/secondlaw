@@ -33,8 +33,8 @@ elif [[ "$OSTYPE" == "msys" ]]; then
 
     # some programs installed via conda get odd names or are not installed as .exe. These aliases attempt at fixing that
     alias markdown="markdown_py"
-    alias pweave="python `which pweave-script.py`"
-    alias ptangle="python `which ptangle-script.py`"
+    #alias pweave="python `which pweave-script.py`"
+    #alias ptangle="python `which ptangle-script.py`"
 
     # ghostscript suffes from the same problem
     alias gs="gswin64"
