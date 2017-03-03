@@ -110,3 +110,8 @@ if [[ "$OSTYPE" == "msys" ]]; then
     alias cesh='ce -new_console:sH'
     alias cesv='ce -new_console:sV'
 fi
+
+# Pandoc settings
+
+## enable bash completion
+eval "$(pandoc --bash-completion)"
