@@ -39,7 +39,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then
     # ghostscript suffes from the same problem
     alias gs="gswin64"
 
-    alias word="C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE"
+    alias word="/c/Program Files/Microsoft Office/root/Office16/WINWORD.EXE"
 fi
 
 export ALTERNATE_EDITOR='atom'
