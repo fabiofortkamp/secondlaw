@@ -10,18 +10,23 @@ This is a personal project where I try to organize my terminal configurations. T
 First, on Windows :
 
 1. Install [Git for Windows](https://git-for-windows.github.io/), making sure to do a *complete installation* (install all utilies, add folders to PATH).
-2. Install [ConEmu](https://conemu.github.io/)
-3. Copy `ConEmu.xml` to `%APPDATA%` (unfortunately, it seems ConEmu cannot read symbolic links as settings file, so anytime the settings file it has to be exported to this repo to keep track of it; on the other hand, every time this repo is update you may have to copy this file again).
+2. Clone this repository to a directory of your choice, using the `--recursive` flag (since I include some submodules).
+3. Install [ConEmu](https://conemu.github.io/)
+4. Copy `ConEmu.xml` to `%APPDATA%` (unfortunately, it seems ConEmu cannot read symbolic links as settings file, so anytime the settings file it has to be exported to this repo to keep track of it; on the other hand, every time this repo is update you may have to copy this file again).
 4. Run ConEmu to make sure everything is working
 5. Create shortcuts for the [AutoHotKey][ahk] scripts in the StartUp Folder `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
 
-Then, on Windows OR OS X:
+On OS X:
 
 1. Clone this repository to a directory of your choice, using the `--recursive` flag (since I include some submodules).
-2. Inside your bash configuration file (e.g. `~/.bash_profile`), define the `SECONDLAW` variable to point to the installation directory from the step above, and then include `source $SECONDLAW/secondlaw.sh` in the configuration file. Important! Don't forget to actually define this variable, since it is used thourghout this project.
-3. Create a symbolic link for `latexmkrc` to `~/.latexmkrc`
-4. Create a `prm-data-win` or `prm-data-osx` (depending on your system) inside this directory.
-5. Install the [DejaVu fonts](http://dejavu-fonts.org/wiki/Main_Page)
+
+
+Then, on either Windows OR OS X:
+
+1. Inside your bash configuration file (e.g. `~/.bash_profile`), define the `SECONDLAW` variable to point to the installation directory from the step above, and then include `source $SECONDLAW/secondlaw.sh` in the configuration file. Important! Don't forget to actually define this variable, since it is used thourghout this project.
+2. Create a symbolic link for `latexmkrc` to `~/.latexmkrc`
+3. Create a `prm-data-win` or `prm-data-osx` (depending on your system) inside this directory.
+
 
 ## Current features
 
