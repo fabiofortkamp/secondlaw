@@ -1,0 +1,25 @@
+
+% Default to the notebook output style
+((* if not cell_style is defined *))
+    ((* set cell_style = 'style_ipython.tplx' *))
+((* endif *))
+
+% Inherit from the specified cell style.
+((* extends cell_style *))
+
+
+%===============================================================================
+% Latex Article
+%===============================================================================
+
+((* block docclass *))
+\documentclass[article,brazil,english]{techreport}
+
+\usepackage{engsymbols}
+\usepackage{magref}
+
+\author{F.P. Fortkamp}
+((* endblock docclass *))
+
+((* block input_group *))
+((* endblock input_group *))

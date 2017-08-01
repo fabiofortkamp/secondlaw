@@ -110,3 +110,6 @@ if [[ "$OSTYPE" == "msys" ]]; then
     alias cesh='ce -new_console:sH'
     alias cesv='ce -new_console:sV'
 fi
+
+# Jupyter
+export JUPYTER_CONFIG_DIR=$SECONDLAW/jupyter

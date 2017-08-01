@@ -58,3 +58,19 @@ I will collect some [AutoHotKey][ahk] scripts in the `bin` directory (together w
 
 [ahk]: http://autohotkey.com
 [homectrl]: https://github.com/fabiofortkamp/homectrl
+
+### Jupyter
+
+The main [Jupyter configuration directory][jupconfig] is set to `$SECONDLAW/jupyter`. If you don't have Jupyter installed (presumably via [Anaconda][Anaconda]), nothing will happen.
+
+There is a [basic `nbconvert` configuration][nbconvert-config] to my own uses. The custom templates are defined in `$SECONDLAW/jupyter/templates`. For they to make sense, you have to install my custom LaTeX classes and packages:
+
+* [`techreport`](https://github.com/fabiofortkamp/techreport)
+* [`engsymbols`](https://github.com/fabiofortkamp/engsymbols)
+* [`magref`](https://github.com/PoloMag/magref-latex)
+
+[jupconfig]: https://jupyter.readthedocs.io/en/latest/projects/jupyter-directories.html
+
+[nbconvert-config]: https://nbconvert.readthedocs.io/en/stable/config_options.html
+
+[Anaconda]: https://www.continuum.io/downloads
