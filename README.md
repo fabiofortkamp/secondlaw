@@ -21,12 +21,18 @@ On OS X:
 1. Clone this repository to a directory of your choice, using the `--recursive` flag (since I include some submodules).
 
 
+
 Then, on either Windows OR OS X:
 
 1. Inside your bash configuration file (e.g. `~/.bash_profile`), define the `SECONDLAW` variable to point to the installation directory from the step above, and then include `source $SECONDLAW/secondlaw.sh` in the configuration file. Important! Don't forget to actually define this variable, since it is used thourghout this project.
-2. Create a symbolic link for `latexmkrc` to `~/.latexmkrc`
-3. Create a `prm-data-win` or `prm-data-osx` (depending on your system) inside this directory.
-
+2. Install [TeX Live](https://www.tug.org/texlive/) and create a symbolic link for `latexmkrc` to `~/.latexmkrc`
+3. Install my LaTeX packages:
+    * [`techreport`](https://github.com/fabiofortkamp/techreport)
+    * [`engsymbols`](https://github.com/fabiofortkamp/engsymbols)
+    * [`magref`](https://github.com/PoloMag/magref-latex)
+4. Install [pandoc](http://pandoc.org) and create a symbolic link for the `pandoc` directory to Pandoc data directory (run `pandoc --version` to check your system's data dir)
+5. Create a `prm-data-win` or `prm-data-osx` (depending on your system) inside this directory.
+6. Install the [DejaVu fonts](http://dejavu-fonts.org/wiki/Main_Page)
 
 ## Current features
 
@@ -59,18 +65,21 @@ I will collect some [AutoHotKey][ahk] scripts in the `bin` directory (together w
 [ahk]: http://autohotkey.com
 [homectrl]: https://github.com/fabiofortkamp/homectrl
 
+### Pandoc
+
+My most common use case is to convert Markdown notes to LaTeX and PDF. I've tweaked the default Pandoc template for LaTeX, to use the [`techreport`](https://github.com/fabiofortkamp/techreport) class and the [`engsymbols`](https://github.com/fabiofortkamp/engsymbols) and [`magref`](https://github.com/PoloMag/magref-latex) packages (hence the requirements to install them).
+
+
 ### Jupyter
 
 The main [Jupyter configuration directory][jupconfig] is set to `$SECONDLAW/jupyter`. If you don't have Jupyter installed (presumably via [Anaconda][Anaconda]), nothing will happen.
 
-There is a [basic `nbconvert` configuration][nbconvert-config] to my own uses. The custom templates are defined in `$SECONDLAW/jupyter/templates`. For they to make sense, you have to install my custom LaTeX classes and packages:
-
-* [`techreport`](https://github.com/fabiofortkamp/techreport)
-* [`engsymbols`](https://github.com/fabiofortkamp/engsymbols)
-* [`magref`](https://github.com/PoloMag/magref-latex)
+There is a [basic `nbconvert` configuration][nbconvert-config] to my own uses. The custom templates are defined in `$SECONDLAW/jupyter/templates`. For they to make sense, you have to install my custom LaTeX classes and packages described above.
 
 [jupconfig]: https://jupyter.readthedocs.io/en/latest/projects/jupyter-directories.html
 
 [nbconvert-config]: https://nbconvert.readthedocs.io/en/stable/config_options.html
 
 [Anaconda]: https://www.continuum.io/downloads
+
+

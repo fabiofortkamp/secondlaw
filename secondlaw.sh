@@ -38,6 +38,8 @@ elif [[ "$OSTYPE" == "msys" ]]; then
 
     # ghostscript suffes from the same problem
     alias gs="gswin64"
+
+    alias word="/c/Program Files/Microsoft Office/root/Office16/WINWORD.EXE"
 fi
 
 export ALTERNATE_EDITOR='atom'
@@ -113,3 +115,9 @@ fi
 
 # Jupyter
 export JUPYTER_CONFIG_DIR=$SECONDLAW/jupyter
+
+# Pandoc settings
+
+## enable bash completion
+eval "$(pandoc --bash-completion)"
+
