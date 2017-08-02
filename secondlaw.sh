@@ -81,7 +81,7 @@ alias pst='prm start'
 alias freq='cat ~/.bash_history | sort | uniq -c | sort -gr | head'
 
 alias ebp='e $HOME/.bash_profile'
-alias jnb='jupyter notebook'
+
 
 # stolen from https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/functions.zsh
 function take() {
@@ -115,6 +115,11 @@ fi
 
 # Jupyter
 export JUPYTER_CONFIG_DIR=$SECONDLAW/jupyter
+
+alias jnb='jupyter notebook'
+
+## use my custom template as the default
+alias nb2pdf='jupyter nbconvert --to pdf --template techreport'
 
 # Pandoc settings
 

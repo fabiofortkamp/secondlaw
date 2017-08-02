@@ -21,5 +21,6 @@
 \author{F.P. Fortkamp}
 ((* endblock docclass *))
 
+% hide code cells
 ((* block input_group *))
 ((* endblock input_group *))

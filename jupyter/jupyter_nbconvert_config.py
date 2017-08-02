@@ -210,10 +210,13 @@ c.TemplateExporter.template_path = ['.',
 #c.PDFExporter.bib_command = ['bibtex', '{filename}']
 
 ## Shell command used to compile latex.
-c.PDFExporter.latex_command = ['pdflatex', '{filename}']
+c.PDFExporter.latex_command = ['latexmk', '{filename}']
 
 ## How many times latex will be called.
-#c.PDFExporter.latex_count = 3
+
+## in principle, if we use latexmk we only need one run, as
+## latexmk takes care of re-running it
+c.PDFExporter.latex_count = 1
 
 ## File extensions of temp files to remove after running.
 #c.PDFExporter.temp_file_exts = ['.aux', '.bbl', '.blg', '.idx', '.log', '.out']
