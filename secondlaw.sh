@@ -12,6 +12,8 @@ alias gac='git commit -am'
 alias gpull='git pull origin master'
 alias gr='git rm'
 
+alias ll='ls -l'
+
 # ----------
 # Editor configuration
 
@@ -25,6 +27,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     export EDITOR="emacsclient -s $HOME/.emacs.d/server/server -n"
     export LC_ALL=en_US.UTF-8
     export LANG=en_US.UTF-8
+
+    alias pycharm="charm"
 elif [[ "$OSTYPE" == "msys" ]]; then
         # Lightweight shell and GNU utilities compiled for Windows (part of MinGW and Git for Windows Bash)
     PRM_DIR="$SECONDLAW/prm-data-win"
@@ -40,6 +44,8 @@ elif [[ "$OSTYPE" == "msys" ]]; then
     alias gs="gswin64"
 
     alias word="/c/Program Files/Microsoft Office/root/Office16/WINWORD.EXE"
+
+    alias pycharm="pycharm64"
 fi
 
 export ALTERNATE_EDITOR='atom'
