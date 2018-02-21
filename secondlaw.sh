@@ -46,6 +46,8 @@ elif [[ "$OSTYPE" == "msys" ]]; then
     alias word="/c/Program Files/Microsoft Office/root/Office16/WINWORD.EXE"
 
     alias pycharm="pycharm64"
+
+    alias comsolcompile53a="/c/Program\ Files/COMSOL/COMSOL53a/Multiphysics/bin/win64/comsolcompile.exe"
 fi
 
 export ALTERNATE_EDITOR='atom'
