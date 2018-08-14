@@ -125,6 +125,8 @@ fi
 export JUPYTER_CONFIG_DIR=$SECONDLAW/jupyter
 
 alias jnb='jupyter notebook'
+alias jl='jupyter lab'
+alias jc='jupyter console'
 
 ## use my custom template as the default
 alias nb2pdf='jupyter nbconvert --to pdf --template techreport'
