@@ -22,9 +22,10 @@ alias ll='ls -l'
 # ----------
 # OS-specific configurations
 if [[ "$OSTYPE" == "darwin"* ]]; then
-        # Mac OSX
+    # macOS
     PRM_DIR="$SECONDLAW/prm-data-osx"
-    export EDITOR="emacsclient -s $HOME/.emacs.d/server/server -n"
+    export EDITOR="atom"
+    export ALTERNATE_EDITOR="emacsclient -s $HOME/.emacs.d/server/server -n"
     export LC_ALL=en_US.UTF-8
     export LANG=en_US.UTF-8
 
@@ -32,7 +33,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 elif [[ "$OSTYPE" == "msys" ]]; then
         # Lightweight shell and GNU utilities compiled for Windows (part of MinGW and Git for Windows Bash)
     PRM_DIR="$SECONDLAW/prm-data-win"
-    export EDITOR='emacsclient -n'
+    export EDITOR="atom"
+    export ALTERNATE_EDITOR='emacsclient -n'
     alias sde='source deactivate'
 
     # some programs installed via conda get odd names or are not installed as .exe. These aliases attempt at fixing that
@@ -50,7 +52,6 @@ elif [[ "$OSTYPE" == "msys" ]]; then
     alias comsolcompile53a="/c/Program\ Files/COMSOL/COMSOL53a/Multiphysics/bin/win64/comsolcompile.exe"
 fi
 
-export ALTERNATE_EDITOR='atom'
 
 alias e="$EDITOR"
 
@@ -96,19 +97,6 @@ function take() {
   mkdir -p $1
   cd $1
 }
-
-# function to close the buffer corresponding to a given file in emacs
-# cf = close file
-function cf() {
-    e -e  "(if (get-buffer \"$1\") (kill-buffer \"$1\"))"
-    }
-
-# function to compile and run a Java file
-# javar my_program.java
-function javar() {
-    javac $1;
-    java $(basename $1 .java)
-    }
 
 # More ConEmu settings
 
