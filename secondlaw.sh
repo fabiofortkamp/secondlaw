@@ -24,7 +24,7 @@ alias ll='ls -l'
 if [[ "$OSTYPE" == "darwin"* ]]; then
     # macOS
     PRM_DIR="$SECONDLAW/prm-data-osx"
-    export EDITOR="atom"
+    export EDITOR="atom -n"
     export ALTERNATE_EDITOR="emacsclient -s $HOME/.emacs.d/server/server -n"
     export LC_ALL=en_US.UTF-8
     export LANG=en_US.UTF-8
@@ -33,7 +33,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 elif [[ "$OSTYPE" == "msys" ]]; then
         # Lightweight shell and GNU utilities compiled for Windows (part of MinGW and Git for Windows Bash)
     PRM_DIR="$SECONDLAW/prm-data-win"
-    export EDITOR="atom"
+    export EDITOR="atom -n"
     export ALTERNATE_EDITOR='emacsclient -n'
     alias sde='source deactivate'
 
@@ -124,4 +124,3 @@ alias nb2pdf='jupyter nbconvert --to pdf --template techreport'
 
 ## enable bash completion
 eval "$(pandoc --bash-completion)"
-
