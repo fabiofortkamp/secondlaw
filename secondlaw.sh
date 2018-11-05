@@ -124,3 +124,6 @@ alias nb2pdf='jupyter nbconvert --to pdf --template techreport'
 
 ## enable bash completion
 eval "$(pandoc --bash-completion)"
+
+# Pipenv settings
+eval "$(pipenv --completion)"

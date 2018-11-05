@@ -33,6 +33,7 @@ Then, on either Windows OR OS X:
 4. Install [pandoc](http://pandoc.org) and create a symbolic link for the `pandoc` directory to Pandoc data directory (run `pandoc --version` to check your system's data dir)
 5. Create a `prm-data-win` or `prm-data-osx` (depending on your system) inside this directory.
 6. Install the [DejaVu fonts](http://dejavu-fonts.org/wiki/Main_Page)
+7. Install Python 3 and [`pipenv`](https://github.com/pypa/pipenv)
 
 ## Current features
 
@@ -57,7 +58,7 @@ I tried to develop a nice and simple prompt, and the implementation is based on 
 ### Bash projects
 
 I use [my fork](https://github.com/fabiofortkamp/prm) of the [`prm` package](https://github.com/eivind88/prm). In `secondlaw.sh`, I defined two possible locations for the configuration files for this package, based on the operating system (the `prm-data-*` directories). Check the repo page for more details. There are also some useful aliases.
- 
+
 ### Autohotkey
 
 I will collect some [AutoHotKey][ahk] scripts in the `bin` directory (together with some other bash scripts). Read the comments in them to see what they do.
@@ -81,5 +82,3 @@ There is a [basic `nbconvert` configuration][nbconvert-config] to my own uses. T
 [nbconvert-config]: https://nbconvert.readthedocs.io/en/stable/config_options.html
 
 [Anaconda]: https://www.continuum.io/downloads
-
-
