@@ -25,7 +25,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     # macOS
     PRM_DIR="$SECONDLAW/prm-data-osx"
     export EDITOR="atom -n"
-    export ALTERNATE_EDITOR="emacsclient -s $HOME/.emacs.d/server/server -n"
+    alias emacs="emacsclient -s $HOME/.emacs.d/server/server -n"
+    export ALTERNATE_EDITOR="emacs"
     export LC_ALL=en_US.UTF-8
     export LANG=en_US.UTF-8
 
@@ -34,7 +35,8 @@ elif [[ "$OSTYPE" == "msys" ]]; then
         # Lightweight shell and GNU utilities compiled for Windows (part of MinGW and Git for Windows Bash)
     PRM_DIR="$SECONDLAW/prm-data-win"
     export EDITOR="atom -n"
-    export ALTERNATE_EDITOR='emacsclient -n'
+    alias emacs='emacsclient -n'
+    export ALTERNATE_EDITOR="emacs"
     alias sde='source deactivate'
 
     # some programs installed via conda get odd names or are not installed as .exe. These aliases attempt at fixing that
@@ -90,6 +92,12 @@ alias pst='prm start'
 alias freq='cat ~/.bash_history | sort | uniq -c | sort -gr | head'
 
 alias ebp='e $HOME/.bash_profile'
+
+# function to close the buffer corresponding to a given file in emacs
+# cf = close file
+function cf() {
+     emacs -e  "(if (get-buffer \"$1\") (kill-buffer \"$1\"))"
+     }
 
 
 # stolen from https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/functions.zsh
