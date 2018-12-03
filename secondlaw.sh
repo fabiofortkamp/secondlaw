@@ -3,7 +3,7 @@
 # Stolen from Matthias dotfiles:
 # https://github.com/mathiasbynens/dotfiles
 
-for file in ./{path,exports,aliases,functions,prompt,jupyter}.sh; do
+for file in $SECONDLAW/{path,exports,aliases,functions,prompt,jupyter}.sh; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
@@ -11,9 +11,9 @@ unset file;
 # ----------
 # OS-specific configurations
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    source macos.sh
+    source $SECONDLAW/macos.sh
 elif [[ "$OSTYPE" == "msys" ]]; then
-    source windows
+    source $SECONDLAW/windows.sh
 fi
 
 # ----------
