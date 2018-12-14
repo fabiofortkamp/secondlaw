@@ -32,7 +32,7 @@ Then, on either Windows OR OS X:
     * [`magref`](https://github.com/PoloMag/magref-latex)
 4. Install [pandoc](http://pandoc.org) and create a symbolic link for the `pandoc` directory to Pandoc data directory (run `pandoc --version` to check your system's data dir)
 5. Create a `prm-data-win` or `prm-data-osx` (depending on your system) inside this directory.
-6. Install the [DejaVu fonts](http://dejavu-fonts.org/wiki/Main_Page)
+6. Install the [DejaVu fonts](https://dejavu-fonts.github.io/)
 7. Install Python 3 and [`pipenv`](https://github.com/pypa/pipenv)
 
 ## Current features
