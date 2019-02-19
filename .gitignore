@@ -1,3 +1,4 @@
 *~
 *.tmp
 prm-data*/*
+jupyter/lab/workspaces
