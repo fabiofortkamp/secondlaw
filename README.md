@@ -24,6 +24,7 @@ On OS X:
 
 Then, on either Windows OR OS X:
 
+1. Install [Visual Studio Code](https://code.visualstudio.com/)
 1. Inside your bash configuration file (e.g. `~/.bash_profile`), define the `SECONDLAW` variable to point to the installation directory from the step above, and then include `source $SECONDLAW/secondlaw.sh` in the configuration file. Important! Don't forget to actually define this variable, since it is used thourghout this project.
 2. Install [TeX Live](https://www.tug.org/texlive/) and create a symbolic link for `latexmkrc` to `~/.latexmkrc`
 3. Install my LaTeX packages:
@@ -41,7 +42,7 @@ We are just at the beginning. First, the basics:
 
 * Some git aliases (type `alias` to see what's defined)
 * PDF mode for latexmkrc (later I may develop on this)
-* The `EDITOR` variable points to Emacs (or Atom, if Emacs is not available). The `e` alias is set up to the available editor.
+* The `EDITOR` variable points to Visual Studio Code (or Emacs, if that is not available). The `e` alias is set up to the available editor.
 
 ### Terminal in Windows
 

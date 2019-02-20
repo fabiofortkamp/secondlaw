@@ -1,1 +1,1 @@
-export EDITOR="atom -n"
+export EDITOR="code -n"
