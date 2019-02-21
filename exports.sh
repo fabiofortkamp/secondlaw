@@ -1,1 +1,1 @@
-export EDITOR="code -n"
+export EDITOR="code"
