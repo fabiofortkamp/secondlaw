@@ -7,6 +7,7 @@ alias gcmsg='git commit -m'
 alias gac='git commit -am'
 alias gpull='git pull origin master'
 alias gr='git rm'
+alias gtree='git log --pretty=oneline --graph --decorate --all'
 
 alias ll='ls -l'
 
