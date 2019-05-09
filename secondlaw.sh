@@ -24,8 +24,9 @@ alias prm=". $PRM_INSTALLATION_DIR/prm.sh"
 alias pt='prm stop'
 alias pst='prm start'
 
-# Jupyter
+# Jupyter and IPython
 export JUPYTER_CONFIG_DIR=$SECONDLAW/jupyter
+export IPYTHONDIR=$SECONDLAW/ipython
 
 alias jnb='jupyter notebook'
 alias jl='jupyter lab'
