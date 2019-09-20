@@ -13,28 +13,27 @@ First, on Windows :
 2. Clone this repository to a directory of your choice, using the `--recursive` flag (since I include some submodules).
 3. Install [ConEmu](https://conemu.github.io/)
 4. Copy `ConEmu.xml` to `%APPDATA%` (unfortunately, it seems ConEmu cannot read symbolic links as settings file, so anytime the settings file it has to be exported to this repo to keep track of it; on the other hand, every time this repo is update you may have to copy this file again).
-4. Run ConEmu to make sure everything is working
-5. Create shortcuts for the [AutoHotKey][ahk] scripts in the StartUp Folder `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
+5. Run ConEmu to make sure everything is working
+6. Create shortcuts for the [AutoHotKey][ahk] scripts in the StartUp Folder `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
 
 On OS X:
 
 1. Clone this repository to a directory of your choice, using the `--recursive` flag (since I include some submodules).
 
-
-
 Then, on either Windows OR OS X:
 
-1. Install [Visual Studio Code](https://code.visualstudio.com/)
-1. Inside your bash configuration file (e.g. `~/.bash_profile`), define the `SECONDLAW` variable to point to the installation directory from the step above, and then include `source $SECONDLAW/secondlaw.sh` in the configuration file. Important! Don't forget to actually define this variable, since it is used thourghout this project.
-2. Install [TeX Live](https://www.tug.org/texlive/) and create a symbolic link for `latexmkrc` to `~/.latexmkrc`
-3. Install my LaTeX packages:
+1. Symlink `~/.gitconfig/` to `$SECONDLAW/gitconfig`
+2. Install [Visual Studio Code](https://code.visualstudio.com/)
+3. Inside your bash configuration file (e.g. `~/.bash_profile`), define the `SECONDLAW` variable to point to the installation directory from the step above, and then include `source $SECONDLAW/secondlaw.sh` in the configuration file. Important! Don't forget to actually define this variable, since it is used thourghout this project.
+4. Install [TeX Live](https://www.tug.org/texlive/) and create a symbolic link for `latexmkrc` to `~/.latexmkrc`
+5. Install my LaTeX packages:
     * [`techreport`](https://github.com/fabiofortkamp/techreport)
     * [`engsymbols`](https://github.com/fabiofortkamp/engsymbols)
     * [`magref`](https://github.com/PoloMag/magref-latex)
-4. Install [pandoc](http://pandoc.org) and create a symbolic link for the `pandoc` directory to Pandoc data directory (run `pandoc --version` to check your system's data dir)
-5. Create a `prm-data-win` or `prm-data-osx` (depending on your system) inside this directory.
-6. Install the [DejaVu fonts](https://dejavu-fonts.github.io/)
-7. Install Python 3 and [`pipenv`](https://github.com/pypa/pipenv)
+6. Install [pandoc](http://pandoc.org) and create a symbolic link for the `pandoc` directory to Pandoc data directory (run `pandoc --version` to check your system's data dir)
+7. Create a `prm-data-win` or `prm-data-osx` (depending on your system) inside this directory.
+8. Install the [DejaVu fonts](https://dejavu-fonts.github.io/)
+9. Install Python 3 and [`pipenv`](https://github.com/pypa/pipenv)
 
 ## Current features
 
@@ -46,7 +45,7 @@ We are just at the beginning. First, the basics:
 
 ### Terminal in Windows
 
-For Windows: ``Hyper-I `` will activate/deactivate ConEmu in a Visor style (you may want to put a shortcur to ConEmu in your start folder to assure fast access to the terminal on Windows).
+For Windows: `Hyper-I` will activate/deactivate ConEmu in a Visor style (you may want to put a shortcur to ConEmu in your start folder to assure fast access to the terminal on Windows).
 
 The `Hyper` key is "created" by `bin/hyper.ahk`, transforming the left `Ctrl` key into `Ctrl-Shift-Alt`. This key combination is very hard to type and hence will likely not be used by any major application; therefore, it is useful for defining global, system-wide shortcuts.
 
@@ -70,7 +69,6 @@ I will collect some [AutoHotKey][ahk] scripts in the `bin` directory (together w
 ### Pandoc
 
 My most common use case is to convert Markdown notes to LaTeX and PDF. I've tweaked the default Pandoc template for LaTeX, to use the [`techreport`](https://github.com/fabiofortkamp/techreport) class and the [`engsymbols`](https://github.com/fabiofortkamp/engsymbols) and [`magref`](https://github.com/PoloMag/magref-latex) packages (hence the requirements to install them).
-
 
 ### IPython and Jupyter
 
