@@ -72,14 +72,20 @@ I will collect some [AutoHotKey][ahk] scripts in the `bin` directory (together w
 My most common use case is to convert Markdown notes to LaTeX and PDF. I've tweaked the default Pandoc template for LaTeX, to use the [`techreport`](https://github.com/fabiofortkamp/techreport) class and the [`engsymbols`](https://github.com/fabiofortkamp/engsymbols) and [`magref`](https://github.com/PoloMag/magref-latex) packages (hence the requirements to install them).
 
 
-### Jupyter
+### IPython and Jupyter
 
 The main [Jupyter configuration directory][jupconfig] is set to `$SECONDLAW/jupyter`. If you don't have Jupyter installed (presumably via [Anaconda][Anaconda]), nothing will happen.
 
 There is a [basic `nbconvert` configuration][nbconvert-config] to my own uses. The custom templates are defined in `$SECONDLAW/jupyter/templates`. For they to make sense, you have to install my custom LaTeX classes and packages described above.
+
+The [IPython configuration directory][ipython-profile] is set to `$SECONDLAW/ipython`.
+
+Only the configuration files and templates are tracked in version control for these profiles.
 
 [jupconfig]: https://jupyter.readthedocs.io/en/latest/projects/jupyter-directories.html
 
 [nbconvert-config]: https://nbconvert.readthedocs.io/en/stable/config_options.html
 
 [Anaconda]: https://www.continuum.io/downloads
+
+[ipython-profile]: https://ipython.readthedocs.io/en/stable/config/index.html#configuring-ipython

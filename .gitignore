@@ -1,4 +1,12 @@
 *~
 *.tmp
+.vscode
 prm-data*/*
 jupyter/lab/workspaces
+ipython/*extensions
+ipython/*/history.sqlite
+ipython/*/db*
+ipython/*/log
+ipython/*/pid
+ipython/*/security
+jupyter/migrated
