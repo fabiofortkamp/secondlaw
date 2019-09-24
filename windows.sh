@@ -23,3 +23,5 @@ PROMPT_COMMAND="$PROMPT_COMMAND;ConEmuC -StoreCWD"
 alias ce='ConEmu64 -run {Bash::Git bash}'
 alias cesh='ce -new_console:sH'
 alias cesv='ce -new_console:sV'
+
+alias closew="AutoHotkey $SECONDLAW/bin/closewindow.ahk"

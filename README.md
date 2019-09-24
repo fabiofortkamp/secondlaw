@@ -9,12 +9,13 @@ This is a personal project where I try to organize my terminal configurations. T
 
 First, on Windows :
 
-1. Install [Git for Windows](https://git-for-windows.github.io/), making sure to do a *complete installation* (install all utilies, add folders to PATH).
-2. Clone this repository to a directory of your choice, using the `--recursive` flag (since I include some submodules).
-3. Install [ConEmu](https://conemu.github.io/)
-4. Copy `ConEmu.xml` to `%APPDATA%` (unfortunately, it seems ConEmu cannot read symbolic links as settings file, so anytime the settings file it has to be exported to this repo to keep track of it; on the other hand, every time this repo is update you may have to copy this file again).
-5. Run ConEmu to make sure everything is working
-6. Create shortcuts for the [AutoHotKey][ahk] scripts in the StartUp Folder `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
+1. Install [Git for Windows](https://git-for-windows.github.io/), making sure to do a *complete installation* (install all utilies, add folders to PATH);
+2. Clone this repository to a directory of your choice, using the `--recursive` flag (since I include some submodules);
+3. Install [ConEmu](https://conemu.github.io/);
+4. Copy `ConEmu.xml` to `%APPDATA%` (unfortunately, it seems ConEmu cannot read symbolic links as settings file, so anytime the settings file it has to be exported to this repo to keep track of it; on the other hand, every time this repo is update you may have to copy this file again);
+5. Run ConEmu to make sure everything is working;
+6. Install [AutoHotKey][ahk] and add to PATH;
+7. Create shortcuts for the [AutoHotKey][ahk] scripts in the StartUp Folder `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`;
 
 On OS X:
 
@@ -22,18 +23,18 @@ On OS X:
 
 Then, on either Windows OR OS X:
 
-1. Symlink `~/.gitconfig/` to `$SECONDLAW/gitconfig`
-2. Install [Visual Studio Code](https://code.visualstudio.com/)
-3. Inside your bash configuration file (e.g. `~/.bash_profile`), define the `SECONDLAW` variable to point to the installation directory from the step above, and then include `source $SECONDLAW/secondlaw.sh` in the configuration file. Important! Don't forget to actually define this variable, since it is used thourghout this project.
-4. Install [TeX Live](https://www.tug.org/texlive/) and create a symbolic link for `latexmkrc` to `~/.latexmkrc`
+1. Symlink `~/.gitconfig/` to `$SECONDLAW/gitconfig`;
+2. Install [Visual Studio Code](https://code.visualstudio.com/);
+3. Inside your bash configuration file (e.g. `~/.bash_profile`), define the `SECONDLAW` variable to point to the installation directory from the step above, and then include `source $SECONDLAW/secondlaw.sh` in the configuration file. Important! Don't forget to actually define this variable, since it is used thourghout this project;
+4. Install [TeX Live](https://www.tug.org/texlive/) and create a symbolic link for `latexmkrc` to `~/.latexmkrc`;
 5. Install my LaTeX packages:
     * [`techreport`](https://github.com/fabiofortkamp/techreport)
     * [`engsymbols`](https://github.com/fabiofortkamp/engsymbols)
     * [`magref`](https://github.com/PoloMag/magref-latex)
-6. Install [pandoc](http://pandoc.org) and create a symbolic link for the `pandoc` directory to Pandoc data directory (run `pandoc --version` to check your system's data dir)
-7. Create a `prm-data-win` or `prm-data-osx` (depending on your system) inside this directory.
-8. Install the [DejaVu fonts](https://dejavu-fonts.github.io/)
-9. Install Python 3 and [`pipenv`](https://github.com/pypa/pipenv)
+6. Install [pandoc](http://pandoc.org) and create a symbolic link for the `pandoc` directory to Pandoc data directory (run `pandoc --version` to check your system's data dir);
+7. Create a `prm-data-win` or `prm-data-osx` (depending on your system) inside this directory;
+8. Install the [DejaVu fonts](https://dejavu-fonts.github.io/);
+9. Install Python 3 and [`pipenv`](https://github.com/pypa/pipenv).
 
 ## Current features
 
