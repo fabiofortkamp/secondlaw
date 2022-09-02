@@ -34,7 +34,7 @@ Then, on either Windows OR OS X:
 6. Install [pandoc](http://pandoc.org) and create a symbolic link for the `pandoc` directory to Pandoc data directory (run `pandoc --version` to check your system's data dir);
 7. Create a `prm-data-win` or `prm-data-osx` (depending on your system) inside this directory;
 8. Install the [DejaVu fonts](https://dejavu-fonts.github.io/);
-9. Install Python 3 and [`pipenv`](https://github.com/pypa/pipenv).
+9. Install Python 3.
 
 ## Current features
 

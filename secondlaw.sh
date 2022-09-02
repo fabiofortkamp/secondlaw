@@ -42,8 +42,3 @@ alias nb2pdf='jupyter nbconvert --to pdf --template techreport'
 if [ $(which pandoc) ]; then
     eval "$(pandoc --bash-completion)"
 fi
-
-# Pipenv settings
-if [ $(which pipenv) ]; then
-    eval "$(pipenv --completion)"
-fi
