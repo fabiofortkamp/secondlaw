@@ -42,7 +42,7 @@ We are just at the beginning. First, the basics:
 
 * Some git aliases (type `alias` to see what's defined)
 * PDF mode for latexmkrc (later I may develop on this)
-* The `EDITOR` variable points to Visual Studio Code (or Emacs, if that is not available). The `e` alias is set up to the available editor.
+* The `EDITOR` variable points to [Visual Studio Code Insiders](https://code.visualstudio.com/insiders/) (or Emacs, if that is not available). The `e` alias is set up to the available editor.
 
 ### Terminal in Windows
 
